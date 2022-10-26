@@ -1,0 +1,27 @@
+{
+    "name": "algoexpert",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "lint": "eslint **/*.js --ignore-pattern node_modules/",
+        "test": "npm run lint && mocha test/**/*.test.js",
+        "test-single": "npm run lint && mocha test/arrays/two-number-sum.test.js",
+        "formatter": "prettier --write .",
+        "prepare": "husky install"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/cleisommais/algoexpert.git"
+    },
+    "devDependencies": {
+        "chai": "^4.3.4",
+        "eslint": "^7.32.0",
+        "husky": "^7.0.0",
+        "mocha": "^9.2.0",
+        "prettier": "^2.5.1",
+        "test-console": "^2.0.0"
+    },
+    "author": "Cleison Melo",
+    "license": "ISC"
+}
