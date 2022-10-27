@@ -5,6 +5,7 @@
  * @returns {Number[]}
  */
 function twoNumberSum(array = [], targetSum = 0) {
+    array.sort((a, b) => a - b);
     let p1 = 0,
         p2 = array.length - 1;
     while (p1 < p2) {
