@@ -5,7 +5,7 @@
 const program = require('../../src/arrays/two-number-sum');
 const chai = require('chai');
 
-it('Two Number Sum', function () {
+it('Arrays - Two Number Sum', function () {
     const output = program.twoNumberSum([3, 5, -4, 8, 11, 1, -1, 6], 10);
     chai.expect(output.length === 2).to.deep.equal(true);
     chai.expect(output.includes(11)).to.deep.equal(true);
