@@ -6,7 +6,7 @@
     "scripts": {
         "lint": "eslint **/*.js --ignore-pattern node_modules/",
         "test": "npm run lint && mocha test/**/*.test.js",
-        "test-single": "npm run lint && mocha test/arrays/two-number-sum.test.js",
+        "test-single": "npm run lint && mocha test/arrays/is-valid-subsequence.test.js",
         "formatter": "prettier --write .",
         "prepare": "husky install"
     },
