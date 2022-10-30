@@ -5,56 +5,42 @@
  */
 function spiralTraverse(array = [[]]) {
     const list = new Array();
-    _spiralFill(list, array, 0, array.length - 1, 0, array[0].length - 1);
+    let rowStart = 0,
+        colStart = 0,
+        rowEnd = array.length - 1,
+        colEnd = array[0].length - 1;
+    while (rowStart <= rowEnd && colStart <= colEnd) {
+        //Push the top border elements to the list
+        for (let col = colStart; col <= colEnd; col++) {
+            list.push(array[rowStart][col]);
+        }
+        //Push the left border elements to the list
+        for (let row = rowStart + 1; row <= rowEnd; row++) {
+            list.push(array[row][colEnd]);
+        }
+        //Push the bottom border elements to the list
+        for (let col = colEnd - 1; col >= colStart; col--) {
+            //If row end is equals to row start, it means, you already added that element before
+            if (rowStart === rowEnd) {
+                break;
+            }
+            list.push(array[rowEnd][col]);
+        }
+        //Push the right border elements to the list
+        for (let row = rowEnd - 1; row > rowStart; row--) {
+            //If col end is equals to col start, it means, you already added that element before
+            if (colStart === colEnd) {
+                break;
+            }
+            list.push(array[row][colStart]);
+        }
+        //Go to inner cycle elements, follow the spiral flow
+        rowStart++;
+        rowEnd--;
+        colStart++;
+        colEnd--;
+    }
     return list;
-}
-
-/**
- *
- * @param {Number[]} list
- * @param {Number[][]} array
- * @param {Number} rowStart
- * @param {Number} rowEnd
- * @param {Number} colStart
- * @param {Number} colEnd
- */
-function _spiralFill(
-    list = [],
-    array = [[]],
-    rowStart = 0,
-    rowEnd = 0,
-    colStart = 0,
-    colEnd = 0
-) {
-    if (rowStart > rowEnd || colStart > colEnd) {
-        return;
-    }
-    for (let col = colStart; col <= colEnd; col++) {
-        list.push(array[rowStart][col]);
-    }
-    for (let row = rowStart + 1; row <= rowEnd; row++) {
-        list.push(array[row][colEnd]);
-    }
-    for (let col = colEnd - 1; col >= colStart; col--) {
-        if (rowStart === rowEnd) {
-            break;
-        }
-        list.push(array[rowEnd][col]);
-    }
-    for (let row = rowEnd - 1; row >= rowStart + 1; row--) {
-        if (colStart === colEnd) {
-            break;
-        }
-        list.push(array[row][colStart]);
-    }
-    _spiralFill(
-        list,
-        array,
-        rowStart + 1,
-        rowEnd - 1,
-        colStart + 1,
-        colEnd - 1
-    );
 }
 
 // Do not edit the line below.
