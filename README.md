@@ -178,7 +178,7 @@
     Maximum frequency stack
     First unique character in a string
     Find all anagrams in a string
-    
+
 ### Union Find
 
     Redundant connection
@@ -204,5 +204,3 @@
     Single number
     Two single numbers
     Reverse bits
-
-    
