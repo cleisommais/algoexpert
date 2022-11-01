@@ -118,3 +118,91 @@
     Find duplicate number
     Find the corrupt pair
     Find the first K missing positive number
+
+### Topological Sort
+
+    Compilation Order
+    Alien Dictionary
+    Verifying an alien dictionary
+    Course schedule
+    Find all possible recipes from given supplies
+
+### Stacks
+
+    Basic calculator
+    Remove all adjacent duplicates in string
+    Minimum remove to make valid parentheses
+    Exclusive execution time of functions
+    Flatten nested list iterator
+    Valid parentheses
+
+### Tree Depth-First Search
+
+    Flatten binary tree to linked list
+    Diameter of binary tree
+    Serialize and deserialize binary tree
+    Invert binary tree
+    Binary tree maximum path sum
+    Maximum depth of binary tree
+
+### Tree Breadth First Search
+
+    Level order traversal of binary tree
+    Binary tree zigzag level order traversal
+    Populating next right pointers in each node
+    Vertical order traversal of a binary tree
+    Connect all siblings of a binary tree
+
+### Trie
+
+    Implement Trie
+    Search suggestions system
+    Replace words
+    Design add and search words data structure
+    Lexicographical numbers
+
+### Hash Maps
+
+    Design hash map
+    Fraction to recurring decimal
+    Logger rate limiter
+    Next greater element
+    Isomorphic strings
+    Longest palindrome
+
+### Knowing What to Track
+
+    Palindrome permutation
+    Design tic-tac-toe
+    Group anagrams
+    Maximum frequency stack
+    First unique character in a string
+    Find all anagrams in a string
+    
+### Union Find
+
+    Redundant connection
+    Number of islands
+    Last day where you can still cross
+    Regions cut by slashes
+    Minimize malware spread
+
+### Custom Data Structures
+
+    Snapshot array
+    Time-based key-value store
+    Implement LRU Cache
+    Insert delete getRandom
+    Min Stack
+    LFU Cache
+
+### Bitwise Manipulation
+
+    Find the difference
+    Complement of base 10 number
+    Flipping an image
+    Single number
+    Two single numbers
+    Reverse bits
+
+    
