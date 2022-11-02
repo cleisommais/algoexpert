@@ -8,11 +8,10 @@ function mergeOverlappingIntervals(array = [[]]) {
     array.sort((a, b) => a[0] - b[0]);
     let currentInterval = array[0];
     mergedIntervals.push(currentInterval);
-    for (const nextInterval of array) {
-        const [_, currentIntervalEnd] = currentInterval;
-        const [nextIntervalStart, nextIntervalEnd] = nextInterval;
-        if (currentIntervalEnd >= nextIntervalStart) {
-            currentInterval[1] = Math.max(currentIntervalEnd, nextIntervalEnd);
+    for (let i = 1; i < array.length; i++) {
+        const nextInterval = array[i];
+        if (currentInterval[1] >= nextInterval[0]) {
+            currentInterval[1] = Math.max(currentInterval[1], nextInterval[1]);
         } else {
             currentInterval = nextInterval;
             mergedIntervals.push(currentInterval);
